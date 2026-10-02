@@ -1,0 +1,428 @@
+
+/* ABOUT SECTION */
+
+#about.content.active {
+    width: 100%;
+    margin: 2rem auto;
+
+    display: grid;
+    grid-template-columns: 300px 1fr;
+
+    gap: 3.5rem;
+
+    align-items: start;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.5rem;
+
+    width: 100%;
+}
+
+.sidebar h3 {
+    font-size: 2rem;
+}
+
+.sidebar p {
+    font-size: 1.1rem;
+
+    text-align: justify;
+
+    line-height: 1.6;
+}
+
+/* TABS */
+
+.sidebar .tabs {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1rem;
+}
+
+.sidebar .tabs span {
+    border: 2px solid transparent;
+
+    text-align: center;
+
+    padding: 1.2rem;
+
+    font-size: 1.3rem;
+
+    font-weight: 700;
+
+    border-radius: 5px;
+
+    background: var(--secondary);
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+/* Hover */
+
+.sidebar .tabs span:hover {
+    border-color: var(--green);
+
+    color: var(--green);
+}
+
+/* Active */
+
+.tab.active {
+    border-color: var(--green) !important;
+
+    color: var(--green);
+}
+
+/* TAB CONTENT */
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: flex;
+
+    width: 100%;
+
+    flex-direction: column;
+
+    gap: 2rem;
+
+    min-width: 0;
+}
+
+/* Heading */
+
+.tab-content h2 {
+    font-size: 2rem;
+}
+
+.tab-content h2 span {
+    color: var(--green);
+}
+
+/* Description */
+
+.section-description {
+    font-size: 1.05rem;
+
+    line-height: 1.5;
+}
+
+/* EXPERIENCE LIST */
+
+.experience-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1.5rem;
+
+    max-height: 500px;
+
+    overflow-y: auto;
+
+    padding-right: 10px;
+}
+
+/* Experience Box */
+
+.experience-item {
+    flex-shrink: 0;
+
+    padding: 1.5rem;
+
+    border-radius: 8px;
+
+    background: var(--secondary);
+
+    border-left: 5px solid var(--green);
+}
+
+/* Date */
+
+.experience-item .date {
+    display: block;
+
+    color: var(--green);
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    margin-bottom: 0.8rem;
+}
+
+/* Position */
+
+.experience-item h3 {
+    font-size: 1.5rem;
+
+    margin-bottom: 0.5rem;
+}
+
+/* Company */
+
+.experience-item h4 {
+    color: var(--green);
+
+    font-size: 1.1rem;
+
+    margin-bottom: 1rem;
+}
+
+/* Description */
+
+.experience-item p {
+    font-size: 1rem;
+
+    line-height: 1.5;
+}
+
+/* EDUCATION */
+
+.education-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1.5rem;
+
+    max-height: 500px;
+
+    overflow-y: auto;
+
+    padding-right: 10px;
+}
+
+.education-item {
+    flex-shrink: 0;
+
+    padding: 1.5rem;
+
+    border-radius: 8px;
+
+    background: var(--secondary);
+
+    border-left: 5px solid var(--green);
+}
+
+.education-item .date {
+    display: block;
+
+    color: var(--green);
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    margin-bottom: 0.8rem;
+}
+
+.education-item h3 {
+    font-size: 1.5rem;
+
+    margin-bottom: 0.5rem;
+}
+
+.education-item h4 {
+    color: var(--green);
+
+    font-size: 1.1rem;
+
+    margin-bottom: 1rem;
+}
+
+.education-item p {
+    font-size: 1rem;
+
+    line-height: 1.5;
+}
+
+/* SCROLLBAR */
+
+.experience-list::-webkit-scrollbar,
+.education-list::-webkit-scrollbar {
+    width: 7px;
+}
+
+.experience-list::-webkit-scrollbar-thumb,
+.education-list::-webkit-scrollbar-thumb {
+    background: var(--green);
+
+    border-radius: 10px;
+}
+
+.experience-list::-webkit-scrollbar-track,
+.education-list::-webkit-scrollbar-track {
+    background: var(--secondary);
+
+    border-radius: 10px;
+}
+
+/* SKILLS */
+
+.skills-list {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1.2rem;
+
+    max-height: 500px;
+
+    overflow-y: auto;
+
+    padding-right: 10px;
+}
+
+.skill-item {
+    padding: 1.5rem;
+
+    background: var(--secondary);
+
+    border-radius: 8px;
+
+    border-left: 5px solid var(--green);
+
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+}
+
+.skill-item i {
+    font-size: 2rem;
+
+    color: var(--green);
+
+    margin-bottom: 0.8rem;
+}
+
+.skill-item h3 {
+    font-size: 1.3rem;
+
+    margin-bottom: 0.5rem;
+}
+
+.skill-item p {
+    font-size: 0.95rem;
+
+    line-height: 1.5;
+}
+
+/* ABOUT ME */
+
+.about-me-content {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1.5rem;
+
+    max-width: 800px;
+}
+
+.about-me-content > p {
+    font-size: 1.05rem;
+
+    line-height: 1.7;
+
+    text-align: justify;
+}
+
+/* ABOUT INFORMATION */
+
+.about-info {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1rem;
+
+    margin-top: 1rem;
+}
+
+.about-info div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.4rem;
+
+    padding: 1.2rem;
+
+    background: var(--secondary);
+
+    border-radius: 8px;
+
+    border-left: 4px solid var(--green);
+}
+
+.about-info span {
+    color: var(--green);
+
+    font-weight: 700;
+}
+
+.about-info strong {
+    font-size: 1rem;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 900px) {
+
+    #about.content.active {
+        grid-template-columns: 1fr;
+
+        gap: 2rem;
+    }
+
+    .sidebar {
+        max-width: 100%;
+    }
+
+    .tab-content.active {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #about.content.active {
+        margin: 1.5rem auto;
+    }
+
+    .sidebar h3 {
+        font-size: 1.7rem;
+    }
+
+    .tab-content h2 {
+        font-size: 1.7rem;
+    }
+
+    .skills-list {
+        grid-template-columns: 1fr;
+    }
+
+    .about-info {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-list,
+    .education-list {
+        max-height: 400px;
+    }
+}
+
